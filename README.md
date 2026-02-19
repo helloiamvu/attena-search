@@ -2,11 +2,33 @@
 
 Search 60,000+ prediction markets from [Kalshi](https://kalshi.com) and [Polymarket](https://polymarket.com) — sports, crypto, politics, weather, geopolitics.
 
-## Install as Claude Code Skill
+## Use with AI Agents
 
+### Claude Code
 ```bash
 npx skills add https://github.com/helloiamvu/attena-search
 ```
+
+### ChatGPT / GPT-4
+Paste this into your system prompt or custom instructions:
+> You have access to Attena Search API for prediction market data. Endpoint: `GET https://attena-api.fly.dev/api/search/?q={query}`. Returns JSON with market odds (yes_price/no_price as 0-1 probability), volume, and source URLs. Params: q (query), limit (1-200), category (sports/crypto/weather/politics/geopolitics), source (kalshi/polymarket), sort (relevance/volume/trending/closing_soon/newest), mode=lite (fast, no LLM). Full docs: https://attena.xyz/docs/search
+
+### Gemini / Other LLMs
+Paste the same instructions above, or point the agent to:
+```
+https://attena.xyz/llms-full.txt
+```
+
+### Cursor / Windsurf / Cline
+Add to your project's `.cursorrules` or agent config:
+```
+For prediction market data, use the Attena Search API:
+GET https://attena-api.fly.dev/api/search/?q={query}&limit=10
+Docs: https://attena.xyz/docs/search
+```
+
+### Any agent with web access
+Just tell it: "Use https://attena-api.fly.dev/api/search/?q= to search prediction markets. Docs at https://attena.xyz/docs/search"
 
 ## Quick Start
 
@@ -53,6 +75,7 @@ Full API reference: [SKILL.md](./SKILL.md)
 - 📋 [Swagger](https://attena-api.fly.dev/docs) — OpenAPI/Swagger
 - 📊 [Status](https://attena.xyz/status)
 - 🔒 [Privacy](https://attena.xyz/privacy)
+- 🤖 [llms-full.txt](https://attena.xyz/llms-full.txt) — Machine-readable docs
 
 ## Rate Limits
 
