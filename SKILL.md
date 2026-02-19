@@ -132,5 +132,7 @@ curl "https://attena-api.fly.dev/api/search/?q=crypto&limit=20&offset=20"  # Pag
 ## Links
 
 - **Search UI**: [attena.xyz](https://attena.xyz)
-- **API docs**: [attena-api.fly.dev/docs](https://attena-api.fly.dev/docs)
+- **API docs**: [attena.xyz/docs/search](https://attena.xyz/docs/search)
+- **Swagger**: [attena-api.fly.dev/docs](https://attena-api.fly.dev/docs)
 - **Status**: [attena.xyz/status](https://attena.xyz/status)
+- **Privacy**: [attena.xyz/privacy](https://attena.xyz/privacy)

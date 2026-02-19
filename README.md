@@ -49,8 +49,10 @@ Full API reference: [SKILL.md](./SKILL.md)
 ## Links
 
 - 🔍 [attena.xyz](https://attena.xyz) — Search UI
-- 📖 [API docs](https://attena-api.fly.dev/docs) — OpenAPI/Swagger
+- 📖 [Docs](https://attena.xyz/docs/search) — API documentation
+- 📋 [Swagger](https://attena-api.fly.dev/docs) — OpenAPI/Swagger
 - 📊 [Status](https://attena.xyz/status)
+- 🔒 [Privacy](https://attena.xyz/privacy)
 
 ## Rate Limits
 
